@@ -4,7 +4,6 @@ import { CreateMessageService } from "../services/CreateMessageService";
 class CreateMessageController {
   async handle(req: Request, res: Response) {
     const { message } = req.body;
-    console.log(message);
     const { user_id } = req;
     const service = new CreateMessageService();
     try {
